@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+      Name="Hello World Line_Faour"
+      Manufacturer="Line Faour"
+      Version="1.0.0"
+      UpgradeCode="A1B2C3D4-E5F6-7890-ABCD-EF1234567890"
+      Language="1033">
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" Title="Hello World Line_Faour" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+
+    <StandardDirectory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLFOLDER" Name="HelloWorld_Line_Faour">
+        <Directory Id="DocFolder" Name="docs" />
+      </Directory>
+    </StandardDirectory>
+  </Package>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="MainExecutable" Guid="B2C3D4E5-F6A7-8901-BCDE-F12345678901">
+        <File Id="HelloWorldExe" Source="helloworld.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="ReadmeFile" Guid="C3D4E5F6-A7B8-9012-CDEF-123456789012" Directory="DocFolder">
+        <File Id="ReadmeMd" Source="README.md" KeyPath="yes" />
+      </Component>
+      <Component Id="UserGuideFile" Guid="D4E5F6A7-B8C9-0123-DEF0-234567890123" Directory="DocFolder">
+        <File Id="UserGuideTxt" Source="user_guide.txt" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

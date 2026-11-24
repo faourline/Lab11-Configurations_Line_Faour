@@ -1,0 +1,32 @@
+User Guide - Hello World from Line_Faour
+========================================
+
+Overview
+--------
+This application prints a greeting message to the console.
+
+Running the application
+-----------------------
+Windows (after MSI install):
+  Open a command prompt and run: helloworld.exe
+  (or navigate to the installation folder under Program Files)
+
+Linux (after DEB install):
+  Open a terminal and run: helloworld
+
+Expected output
+---------------
+Hello, World from Line_Faour!
+
+Uninstall
+---------
+Windows: Settings > Apps > Installed apps > uninstall "Hello World Line_Faour"
+  or: msiexec /x helloworld_Line_Faour.msi
+
+Linux:
+  sudo dpkg -r helloworld-line-faour
+
+Author
+------
+Line Faour
+EECE 435L - Lab 11 Configuration and Deployment Tools

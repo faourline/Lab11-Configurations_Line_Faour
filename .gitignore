@@ -1,0 +1,7 @@
+*.wixpdb
+*.wixobj
+*.pdb
+*.obj
+msi/*.wixpdb
+.DS_Store
+Thumbs.db

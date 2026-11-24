@@ -1,0 +1,9 @@
+Package: helloworld-line-faour
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Line Faour <faourline06@gmail.com>
+Description: A simple Hello World application by Line_Faour
+ Hello, World from Line_Faour! console application
+ packaged for Debian-based Linux distributions.

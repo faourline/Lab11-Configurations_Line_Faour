@@ -1,15 +1,12 @@
-# Screenshots checklist (Line Faour)
+﻿# Screenshots - Line Faour (Lab 11)
 
-Add your own screenshots here for Lab 11 submission. Suggested set:
+| File | Proof |
+|------|-------|
+| `02_msi_installed_apps.png` | Windows Apps: Hello World Line_Faour installed |
+| `03_msi_run.png` | Running installed helloworld.exe |
+| `04_deb_build.png` | dpkg-deb build + DEB_OK |
+| `05_deb_install.png` | sudo dpkg -i helloworld_Line_Faour.deb |
+| `06_deb_installed_and_run.png` | dpkg -l \| grep helloworld + helloworld output |
+| `07_msi_metadata.png` | MSI Properties (Windows Installer Package) |
 
-| File | What to capture |
-|------|-----------------|
-| `01_msi_creation.png` | WiX Toolset / project showing MSI package creation |
-| `02_msi_installed_apps.png` | Hello World Line_Faour in Windows Installed Apps |
-| `03_msi_run.png` | Running the installed `helloworld.exe` |
-| `04_deb_build.png` | Terminal with `dpkg-deb --build` creating the `.deb` |
-| `05_deb_installed.png` | `dpkg -l \| grep helloworld` after install |
-| `06_deb_run.png` | Running `helloworld` after DEB install |
-| `07_msi_metadata.png` | MSI package properties / metadata |
-
-After adding images, commit and push them to this repository.
+MSI source/project used for creation: `msi/Product.wxs` (WiX Toolset).
